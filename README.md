@@ -35,5 +35,3 @@ LPC order:      10
 - [Ограничения ATmega328P и выбор кодека](docs/atmega-audio.md)
 - [Речевые кодеки мобильной связи](docs/mobile-codecs.md)
 - [Хронология разработки](docs/development-history.md)
-
-Источник материалов — [опубликованная переписка ChatGPT](https://chatgpt.com/share/6a6ccb0d-434c-83ed-88b4-2ced1b7dc701).
