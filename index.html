@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Audio Codec Lab v12 — LFA, LPC, Ogg Vorbis и Opus</title>
+<title>Audio Codec Lab v12 — LFA и LPC</title>
 <style>
 :root{color-scheme:dark;--bg:#0d1117;--p:#161b22;--p2:#0b1118;--t:#e6edf3;--m:#9da7b3;--l:#30363d;--a:#58a6ff;--g:#3fb950;--r:#f85149}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#172033,var(--bg) 45%);color:var(--t);font:15px/1.45 system-ui,sans-serif}main{max-width:1120px;margin:auto;padding:24px}h1{font-size:clamp(26px,4vw,40px);margin:0 0 6px}p{color:var(--m)}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.card{grid-column:span 12;background:var(--p);border:1px solid var(--l);border-radius:14px;padding:18px;box-shadow:0 15px 45px #0004}@media(min-width:850px){.left{grid-column:span 5}.right{grid-column:span 7}}.controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:11px;margin:14px 0}label{display:grid;gap:5px;color:var(--m);font-size:13px}input,select,button{font:inherit;color:var(--t);background:var(--p2);border:1px solid var(--l);border-radius:9px;padding:9px 10px}input[type=file]{width:100%}input[type=range]{padding:0}button{cursor:pointer;font-weight:650}button:hover:not(:disabled){border-color:var(--a)}button:disabled{opacity:.45;cursor:not-allowed}.primary{background:#1f6feb}.good{background:#238636}.row{display:flex;gap:9px;flex-wrap:wrap;align-items:center}progress{width:100%;margin-top:13px}.status{min-height:42px;white-space:pre-wrap;color:var(--m)}.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:9px;margin:12px 0}.metric{background:var(--p2);border:1px solid var(--l);border-radius:10px;padding:10px}.metric b{display:block;font-size:18px}.metric span{font-size:12px;color:var(--m)}canvas{display:block;width:100%;height:190px;background:#090d12;border:1px solid var(--l);border-radius:10px;margin-top:8px}details{border-top:1px solid var(--l);margin-top:15px;padding-top:12px}summary{cursor:pointer;font-weight:700}code{background:#090d12;border:1px solid var(--l);border-radius:5px;padding:2px 5px}.small{font-size:12px}.value{color:var(--t)}.codecHidden{display:none!important}.codecNote{font-size:12px;color:var(--m)}
 </style>
 </head>
 <body><main>
-<h1>Audio Codec Lab v12: Vorbis и Opus</h1>
+<h1>Audio Codec Lab v12</h1>
 <p>Страница сравнивает пять независимых кодеков: экспериментальные <b>LFA‑3</b>, <b>LPC1</b> и <b>LPC2 Improved</b>, а также стандартные <b>Ogg Vorbis</b> и <b>Opus</b>. Vorbis кодируется локальным WASM-модулем, загружаемым при первом использовании. Для Opus сначала используется WebCodecs, а при отсутствии поддержки — системный MediaRecorder.</p>
 <div class="grid">
 <section class="card left">
