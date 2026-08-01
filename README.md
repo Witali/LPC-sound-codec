@@ -2,16 +2,18 @@
 
 Экспериментальная браузерная лаборатория для сравнения параметрических и стандартных аудиокодеков, а также потоковый декодер `LPC2 Improved` для ATmega328P.
 
+**Онлайн-версия:** [witali.github.io/LPC-sound-codec](https://witali.github.io/LPC-sound-codec/)
+
 ## Состав проекта
 
-- [`audio_codec_lab_v12_vorbis_opus.html`](audio_codec_lab_v12_vorbis_opus.html) — актуальная автономная веб-страница. Она содержит LFA-3, LPC1, LPC2 Improved, Ogg Vorbis и Opus.
+- [`index.html`](index.html) — актуальная автономная веб-страница. Она содержит LFA-3, LPC1, LPC2 Improved, Ogg Vorbis и Opus.
 - [`arduino/Lpc2AvrDecoder`](arduino/Lpc2AvrDecoder) — библиотека декодирования LPC2 для Arduino Uno/Nano, примеры SD и PROGMEM, конвертер `.lp2` в заголовок C++.
 - [`archive/web`](archive/web) — все промежуточные HTML-версии, выгруженные из исходного чата.
 - [`docs`](docs) — перенесённая и систематизированная документация из обсуждения.
 
 ## Быстрый старт
 
-Откройте `audio_codec_lab_v12_vorbis_opus.html` в современном браузере, загрузите аудиофайл и выберите кодек. Экспериментальные LFA/LPC-режимы работают локально. Для первой загрузки WASM-кодировщика Ogg Vorbis нужен интернет.
+Откройте `index.html` в современном браузере, загрузите аудиофайл и выберите кодек. Экспериментальные LFA/LPC-режимы работают локально. Для первой загрузки WASM-кодировщика Ogg Vorbis нужен интернет.
 
 Рекомендуемый профиль LPC2 для ATmega328P:
 
@@ -35,4 +37,3 @@ LPC order:      10
 - [Хронология разработки](docs/development-history.md)
 
 Источник материалов — [опубликованная переписка ChatGPT](https://chatgpt.com/share/6a6ccb0d-434c-83ed-88b4-2ced1b7dc701).
-
